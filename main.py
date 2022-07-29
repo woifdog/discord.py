@@ -1,13 +1,11 @@
 from discord.ext import commands
 import discord
-from quick_sqlite import Database
 import asyncio
 import os
 
 
 TOKEN = os.environ["TOKEN"]
 
-moneydb = Database("money.db",auto_init=0)
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="m/",intents=intents,help_command=None,case_insensitive = True)
