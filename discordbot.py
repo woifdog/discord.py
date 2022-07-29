@@ -8,7 +8,7 @@ TOKEN = os.environ["TOKEN"]
 
 
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix="m/",intents=intents,help_command=None,case_insensitive = True)
+bot = commands.Bot(command_prefix="m/",intents=intents,help_command=None)
 
 
 
